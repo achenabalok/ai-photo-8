@@ -1,0 +1,101 @@
+{
+"subject": {
+"description": "A young woman with long, honey-brown hair styled in a half-up, half-down manner with loose strands framing the face. She has a fair complexion with natural skin texture. She is wearing a pastel pink lingerie set featuring a bra with delicate scalloped lace detailing along the upper cup edges and a central front clasp, paired with matching pink panties. She is also wearing black thigh-high socks with two white horizontal stripes at the top hem. Her physique is characterized by a slim waist, an hourglass figure, and a significantly voluminous bust that appears full, heavy, and naturally affected by gravity, showing deep cleavage and clear forward projection. The chest volume is prominent and distinct from the ribcage depth.",
+"anatomy_constraints": "Preserve exact bust volume and mass as seen in the reference. Ensure the chest remains clearly above average size with realistic soft tissue behavior and gravity. Do not reduce, flatten, or normalize the breast size. Maintain the visible depth difference between the bust projection and the ribcage. Skin must show natural pores and texture, not plastic smoothness."
+},
+"pose": {
+"description": "The subject is seated, likely on a bed, facing the camera directly. Her body is angled slightly forward. Her arms are extended downwards, with her hands resting comfortably on her upper thighs, just above the knee-high socks. Her legs are spread slightly apart. Her head is tilted very slightly to her right, and she is looking directly at the viewer with a soft, engaging gaze.",
+"skeletal_lock": "Maintain the exact angle of the shoulders, the slight forward lean of the torso, the placement of the hands on the thighs, and the specific tilt of the head."
+},
+"environment": {
+"setting": "A bright, domestic bedroom interior.",
+"elements": [
+"White wall in the background",
+"Framed artwork with a black frame and abstract gold/yellow chandelier-like design on the left",
+"White or light grey textured bedding/sheets beneath the subject",
+"Hint of a dark grey pillow or fabric on the right edge"
+]
+},
+"camera": {
+"shot_type": "Medium shot (thighs up)",
+"perspective": "Eye-level, slightly varying to a high-angle relative to the torso due to the seated position.",
+"focal_length": "50mm to 85mm equivalent (portrait lens)",
+"depth_of_field": "Slightly shallow, keeping the subject in sharp focus while the background artwork and wall are slightly softened.",
+"framing": "Centered subject, cropped just below the tops of the thigh-high socks."
+},
+"lighting": {
+"type": "Natural diffuse daylight",
+"direction": "Front-left (viewer's left)",
+"quality": "Soft and even, creating gentle highlights on the forehead, upper chest, and shoulders.",
+"shadows": "Subtle, natural shadows on the right side of the torso and under the chin, defining the abdominal muscles and collarbones."
+},
+"mood_and_expression": {
+"emotion": "Relaxed, confident, slightly flirty",
+"facial_features": "Soft smile with closed lips, warm eyes, direct eye contact.",
+"atmosphere": "Intimate, casual, morning or daytime vibe."
+},
+"style_and_realism": {
+"style": "Photorealistic, raw photography",
+"fidelity": "High-fidelity texture rendering",
+"skin_texture": "Real skin with subsurface scattering, visible pores, and natural imperfections. No airbrushing or plastic smoothing."
+},
+"colors_and_tone": {
+"palette": "Soft pastels and neutrals. Dominant colors include pastel pink (lingerie), warm beige (skin), white (background/bedding), and black (socks/frame).",
+"contrast": "Moderate contrast with preserved dynamic range.",
+"saturation": "Natural, slightly warm tones."
+},
+"quality_and_technical_details": {
+"resolution": "High resolution, 8k",
+"sharpness": "Focus on eyes and torso",
+"noise": "Low ISO, minimal grain"
+},
+"aspect_ratio_and_output": {
+"ratio": "3:4",
+"orientation": "Portrait"
+},
+"controlnet": {
+"pose_control": {
+"model_type": "OpenPose",
+"purpose": "Exact skeletal and pose lock",
+"constraints": "preserve shoulder width, preserve hip angle, preserve spine curvature, preserve limb placement",
+"recommended_weight": 1.0
+},
+"depth_control": {
+"model_type": "MiDaS",
+"purpose": "Depth, volume, and camera-to-body spatial lock",
+"constraints": "preserve chest foreground dominance, prevent flat or compressed depth, maintain clear torso-to-background separation",
+"recommended_weight": 0.8
+}
+},
+"negative_prompt": {
+"forbidden_content": [
+"anatomy normalization",
+"body proportion averaging",
+"smaller bust than reference",
+"reduced chest volume",
+"flattened or compressed breasts",
+"tightened or lifted breasts",
+"artificially supported breasts",
+"slimmed torso",
+"aesthetic proportion correction",
+"beauty standard enforcement",
+"dataset-average female anatomy",
+"camera angles that reduce volume",
+"wide-angle distortion",
+"lens compression",
+"cropping that removes volume",
+"depth flattening",
+"mirror selfie",
+"phone in hand",
+"reflections",
+"beautification filters",
+"skin smoothing",
+"plastic skin",
+"airbrushed texture",
+"stylized realism",
+"editorial fashion proportions",
+"more realistic reinterpretation",
+"naturalization of prominent features"
+]
+}
+}
